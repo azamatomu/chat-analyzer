@@ -27,7 +27,7 @@ def main():
         # Generate and display word cloud
         st.subheader("Word Cloud:")
 
-        wordcloud, fig = generate_wordcloud(user_texts)
+        wordcloud, fig, ax = generate_wordcloud(user_texts)
         st.pyplot(fig)
 
 if __name__ == "__main__":
